@@ -1,0 +1,51 @@
+{
+	"name": "Wordpress for Heroku",
+	"description": "Based on Wordpress Version 5.5",
+	"repository": "https://github.com/immaterialre/wponheroku-main",
+	"logo": "https://firebasestorage.googleapis.com/v0/b/webtuhin.appspot.com/o/herokuwp.png?alt=media&token=7be5bbab-4cf0-4065-bc22-84ba58eb9c23",
+	"keywords": ["wordpress", "heroku", "mysql", "php", "apache2", "nginx"],
+  
+    "env": {
+    "DB_HOST": {
+	"description": "MySql Database Host",
+	"value":""
+		},
+    "DB_NAME": {
+	"description": "MySql Database Name",
+	"value":""
+		},
+     "DB_USER": {
+	"description": "MySql Database Username",
+	"value":""
+		},
+     "DB_PASSWORD": {
+	"description": "MySql Database Password",
+	"value":""
+        },
+      
+       "XAUTH_KEY": {
+		 "generator": "secret"
+			  },
+	   "XSECURE_AUTH_KEY": {	
+		    "generator": "secret"
+		  },
+	   "XLOGGED_IN_KEY": {		   
+      "generator": "secret"
+		  },
+	   "XNONCE_KEY": {		   
+		    "generator": "secret"
+		  },
+	   "XAUTH_SALT": {		   
+		    "generator": "secret"
+		  },
+	   "XSECURE_AUTH_SALT": {		   
+		    "generator": "secret"
+		  },
+	   "XLOGGED_IN_SALT": {		   
+		    "generator": "secret"
+		  },
+	   "XNONCE_SALT": {		   
+		    "generator": "secret"
+		  }
+   }	   
+}
